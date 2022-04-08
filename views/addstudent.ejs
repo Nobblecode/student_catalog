@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+
+<html>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Lincol</title>
+
+    <style>
+
+
+
+*{
+    margin: 0;
+}
+
+a{
+   text-decoration: none; 
+   color:white;
+   font-family: Arial;
+ 
+}
+
+
+
+      body{
+
+        background-color: #000000;
+
+      }
+
+
+      nav{
+
+    
+        background-color: #222222;
+        height: 60px;
+        width: 100%;
+
+      }
+
+    </style>
+</head>
+
+
+
+
+
+<body >
+
+      
+ 
+
+    
+    <img style="background-image: url(/two.jpeg); width: 100%; height: 100%; z-index: -1; position: absolute; opacity: 0.2;">
+
+    {% load static %}
+
+   
+    
+
+       
+        <h1 style="color: white; font-family: Arial, Helvetica, sans-serif; margin-left: 20px; margin-top: 50px;">Add Student to Directory</h1>
+
+        <form method= "post" action="/insertstudent" style="margin-top: 30px; margin-left: 20px; width: 1000px; margin-bottom: 100px;" >
+            <p style="display: inline;">
+                <label for="sch"></label>
+                <input type="text" name="firstname" id="sch" value="" placeholder="First Name" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="middlename" id="sch" value="" placeholder="Middle Name" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="lastname" id="sch" value="" placeholder="Last Name" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+               
+                <input type="text" name="nickname" id="sch" value="" placeholder="Nick Name" style=" padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="gpa" id="sch" value="" placeholder="Current GPA" style="padding-left: 10px; display: inline;  height: 70px; width: 700px;" /><br>
+              
+
+                <input type="text" name="email" id="sch" value="" placeholder="Email" style=" padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="gender" id="sch" value="" placeholder="Gender" style="padding-left: 10px; display: inline;  height: 70px; width: 700px;" /><br>
+                <input type="text" name="stateoforigin" id="sch" value="" placeholder="State Of Origin" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="matricnumber" id="sch" value="" placeholder="Matric Number" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="department" id="sch" value="" placeholder="Department" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+               
+
+                <input type="text" name="faculty" id="sch" value="" placeholder="Faculty" style=" padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="yearofintake" id="sch" value="" placeholder="Year Of Intake" style="padding-left: 10px; display: inline;  height: 70px; width: 700px;" /><br>
+                <input type="text" name="monthofintake" id="sch" value="" placeholder="Month Of Intake" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="entryage" id="sch" value="" placeholder="Current Age" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="country" id="sch" value="" placeholder="Country" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+                <input type="text" name="expectedyearofentry" id="sch" value="" placeholder="Year of Graduation" style="padding-left: 10px; display: inline; height: 70px; width: 700px;" /><br>
+               
+                <br>
+                <input type = "submit" value = "UPLOAD NOW" style="height: 45px;width: 200px;color: #e7e7e7; font-family: Arial, Helvetica, sans-serif; background-color:  #FF0066; font-size: 15px; text-decoration: none; cursor: pointer; border: none; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
+            </p>
+        </form>
+
+
+    
+ 
+        
+
+
+
+    </div>
+    
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

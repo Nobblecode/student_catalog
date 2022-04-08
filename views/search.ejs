@@ -1,0 +1,236 @@
+
+
+
+<!DOCTYPE html> 
+
+<html>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Lincoln College</title>
+
+    <style>
+
+
+
+*{
+    margin: 0;
+}
+
+a{
+   text-decoration: none; 
+   color:white;
+   font-family: Arial;
+   
+}
+
+
+
+      body{
+
+        background-color: #000000;
+
+      }
+
+
+      nav{
+
+    
+        background-color: #222222;
+        height: 60px;
+        width: 100%;
+
+      }
+
+    </style>
+</head>
+
+
+
+
+
+<body>
+
+
+    
+    <img src="/strawberry.png" style="margin-top: 29px; margin-left: 1190px; position: absolute;  align-self: right; position: absolute;  height: 80px;width: 215px;">
+    
+
+
+
+
+    <p style="font-weight: bolder; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-family: Arial, Helvetica, sans-serif; margin-top: 60px; margin-left: 1250px; position: absolute;  align-self: right; position: absolute;  height: 80px;width: 255px;">Lincoln</p>
+
+    
+
+    
+  
+    <div style="opacity: 0.3; background-image: url(/two.jpeg); position: absolute; z-index: -1; width:100% ;height: 730px; background-size: 100% ; background-position: bottom left;">
+    </div>
+    
+
+    
+
+
+    <div style="height: 730px;background-size: 70%; background-position: bottom left; ">
+
+        
+    
+
+        <nav>
+
+
+    
+            <div style="position: absolute; float: left; ">
+        
+                <h1 style="position: absolute; float: left; font-size: 20px; display: none;">
+                    Strawberry.com<br>A school finding platform
+                </h1>
+            </div>
+                
+        
+            <ul  style="float: right; margin-top: 30px; background-color: orange; width: 60%; margin-right: 125px; height: 80px;">
+                <li style="font-weight: bold; margin-top: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block; list-style: none; text-decoration: none;"><a href="/">Home</a></li>
+                <li style="margin-left: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;"><a href="/sdirectory">Catalog</a></li>
+                <li style="margin-left: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;"><a href="/addstudent">Add Student</a></li>
+                <li style="margin-left: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;"><a href="/search">Search</a></li>
+                <li style="margin-left: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;"><a href="/about">About</a></li>
+              </ul>
+        
+            
+            </nav>
+            
+
+
+    <div></div>
+
+
+    
+
+
+
+
+
+
+<h1><%= msg %></h1>
+    <form method= "post" action="/search" style="position: absolute; margin-top: 70px; margin-right: 10px; margin-left: 20px;" >
+        <p style="display: inline;">
+            <label for="sch"></label>
+            <input type="text" name="search"  id="sch"  placeholder="STUDENT MATRIC NUMBER" style="padding-left: 10px; display: inline; height: 40px; width: 220px;" />
+            <button type="submit" style="height: 45px;width: 165px;color: #e7e7e7; font-family: Arial, Helvetica, sans-serif; background-color:  #FF0066; font-size: 15px; text-decoration: none; cursor: pointer; border: none; padding-left: 30px; padding-right: 30px; padding-top: 9px; padding-bottom: 10px; margin-top: 15px;">search</button>
+        
+        </p>
+    </form>
+  
+    
+
+    <br><br><br><br><br><br><br>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav style="display: none;">
+
+
+    <ul  style=" float: right; margin-top: 10px; background-color: orange; width: 350px; margin-right: 60px;">
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block; list-style: none; text-decoration: none;">Home</li>
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;">Schools</li>
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;">Search</li>
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;">About</li>
+    </ul>
+
+
+</nav>
+
+
+
+    <!--
+    
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <img style="display: none;" style="position: absolute; float: left; background-color: pink ;height: 140px;width: 140px;margin-top: 50px;margin-left: 80px;"/>
+
+
+
+    <h1 style="display: none;" style="margin-top: 200px; color:  #FF0066;font-family:Arial, Helvetica, sans-serif; width: 100px; position: absolute;font-size: 140px; margin-left: 53px; ">Find<br>Schools</h1>
+
+
+
+
+
+    <div style="display: none;" style="margin-left: 60px; height:1px; width: 380px; background-color: #FF0066; position: absolute; margin-top: 520px;">
+
+
+
+    </div>
+
+
+
+
+
+    <div style="display: none;" style="position: absolute;margin-top: 600px; margin-left: 35px; ">
+    <a href="/allschools/" style="border-color: black; border: 10px;padding-top: 20px;padding-bottom: 20px; margin-left: 10px;  font-size: 1.4em; font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 0, 98); color: white; text-decoration: none; padding-right: 120px; padding-left: 120px; border-radius: .5em; " href="searchschools.html">BROWSE ALL</a>
+     </div>
+
+
+
+
+
+
+
+    <img style="display: none;"src="ress/images.jpeg" style="background-color: orange; align-self: right; position: absolute;  height: 600px;width: 600px;float: right;margin-top: 70px;margin-left: 900px;">
+    
+
+
+
+    
+  
+
+</body>
+
+
+
+
+</html>

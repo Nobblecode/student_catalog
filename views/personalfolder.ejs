@@ -1,0 +1,319 @@
+<!DOCTYPE html> 
+
+<html>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Lincoln College</title>
+
+    <style>
+
+
+
+*{
+    margin: 0;
+}
+
+
+
+
+
+a{
+   text-decoration: none; 
+   color:white;
+   font-family: Arial;
+ 
+}
+
+
+
+
+
+
+
+
+.content-table{
+
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 0.9em;
+width: 600px;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0 ,15);
+}
+
+
+.content-table thead tr{
+
+background-color: #009879;
+color: white;
+text-align: left;
+font-weight: bold;
+
+}
+
+
+.content-table tbody tr{
+  border-bottom:  1px solid #dddddd;
+}
+
+.content-table tbody tr.active-row{
+
+font-weight: bold;
+color: #009879;
+
+
+}
+
+
+.content-table tbody t :nth-of-type(even){
+
+background-color: #f3f3f3;
+
+}
+
+
+.content-table th, .content-table td{
+
+padding: 12px 15px;
+
+}
+
+
+.content-table tbody tr:last-of-type {
+
+border-bottom: 2px solid #009879;
+
+}
+
+
+
+
+
+
+
+      body{
+
+        background-color: #000000;
+
+      }
+
+
+      nav{
+
+    
+        background-color: #222222;
+        height: 60px;
+        width: 100%;
+
+      }
+
+    </style>
+</head>
+
+
+
+
+
+<body>
+
+
+    
+    <img src="/strawberry.png" style="margin-top: 29px; margin-left: 1190px; position: absolute;  align-self: right; position: absolute;  height: 80px;width: 215px;">
+    
+
+    <p style="font-weight: bolder; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-family: Arial, Helvetica, sans-serif; margin-top: 60px; margin-left: 1250px; position: absolute;  align-self: right; position: absolute;  height: 80px;width: 255px;">Lincoln</p>
+
+    
+    
+    
+      
+    <div style="opacity: 0.3; background-image: url(/two.jpeg); position: absolute; z-index: -1; width:100% ;height: 730px; background-size: 100% ; background-position: bottom left;">
+    </div>
+    
+
+    
+
+    <div style="height: 730px;background-size: 70%; background-position: bottom left; ">
+
+        
+    
+
+        <nav>
+
+
+    
+            <div style="position: absolute; float: left; ">
+        
+                <h1 style="position: absolute; float: left; font-size: 20px; display: none;">
+                    Strawberry.com<br>A school finding platform
+                </h1>
+            </div>
+                
+        
+                <ul  style="float: right; margin-top: 30px; background-color: orange; width: 60%; margin-right: 125px; height: 80px;">
+                  <li style="font-weight: bold; margin-top: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block; list-style: none; text-decoration: none;"><a href="/">Home</a></li>
+                  <li style="margin-left: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;"><a href="/sdirectory">Catalog</a></li>
+                  <li style="margin-left: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;"><a href="/search">Search</a></li>
+                  <li style="margin-left: 20px; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;"><a href="/about">About</a></li>
+                </ul>
+          
+            
+            </nav>
+            
+    <div></div>
+    <br><br><br><br><br><br><br>
+
+
+
+
+   
+    <div style="font-family: Arial, Helvetica, sans-serif; margin-left: 20px; background-color: #ffffff; padding: 20px;margin-top: 20px;width: 1200px; height: 1000px;">
+
+    <h1 style="font-size: 50px;"><%= strs.firstname %> <%= strs.lastame %></h1>
+    
+    <p style="margin-top: 20px;"><%= strs.matricnumber %></p>
+
+
+    <div style=" background-image: url(/avatarr.png); height: 190px;width: 181px;margin-top: 120px; float: right; margin-right: 367px;">
+
+
+    </div>
+
+  
+    
+
+ 
+
+
+    
+
+    <div style="position: absolute; width: 200px; margin-left: 650px; margin-top: 50px; ">
+
+
+        
+    <form method= "get" action="/update/<%= strs.matricnumber %>" >
+        <p style="display: inline;">
+            <label for="sch"></label>
+            <input type = "submit" value = "Edit" style="width: 183px;color: #e7e7e7; font-family: Arial, Helvetica, sans-serif; background-color:  rgb(219, 143, 0);; font-size: 15px; text-decoration: none; cursor: pointer; border: none; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; margin-top: 0px;">
+        </p>
+    </form>
+
+
+    <form method= "get" action="/delete/<%= strs.matricnumber%>" >
+        <p style="display: inline;">
+            <label for="sch"></label>
+            <input type = "submit" value = "Delete" style="width: 183px;color: #e7e7e7; font-family: Arial, Helvetica, sans-serif; background-color: palevioletred; font-size: 15px; text-decoration: none; cursor: pointer; border: none; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; margin-top: 650px;">
+        </p>
+    </form>
+  
+
+    </div>
+
+    <div style="margin-top: 50px;">
+
+
+
+        <section>
+            <table class="content-table">
+            
+            
+            
+            <thead>
+                <tr>
+                <th>Information </th>
+                <th>Value </th>
+                </tr>
+            </thead>
+            
+        
+        
+            
+            
+            <tr><td>First Name</td> <td><%= strs.firstname %></td></tr>
+            <tr><td>Last Name</td><td><%= strs.lastname %></td></tr>
+            <tr><td>Nickname</td> <td><%= strs.nickname %></td></tr>
+            <tr><td>Middle Name</td><td><%= strs.middlename %></td></tr>
+            <tr><td>Email</td> <td><%= strs.email %></td></tr>
+            <tr><td>Gender</td><td><%= strs.gender %></td></tr>
+            <tr><td>State of origin</td> <td><%= strs.stateoforigin %></td></tr>
+            <tr><td>Matriculation Number</td><td><%= strs.matricnumber %></td></tr>
+            <tr><td>Department</td> <td><%= strs.department %></td></tr>
+            <tr><td>Faculty</td><td><%= strs.faculty %></td></tr>
+
+            <tr><td>Year of intake</td><td><%= strs.yearofintake %></td></tr>
+            <tr><td>Month of Intake</td> <td><%= strs.monthofintake %></td></tr>
+            <tr><td>Matriculation Number</td><td><%= strs.matricnumber %></td></tr>
+            <tr><td>Age</td> <td><%= strs.entryage %></td></tr>
+            <tr><td>GPA</td> <td><%= strs.gpa %></td></tr>
+            <tr><td>Year of completion</td><td><%= strs.expectedyearofentry %></td></tr>
+
+            <tr><td>Country</td><td><%= strs.country %></td></tr>
+                     
+
+          
+         
+      
+            
+            </table>
+            
+        </section>
+        
+        
+        
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav style="display: none;">
+
+
+    <ul  style=" float: right; margin-top: 10px; background-color: orange; width: 350px; margin-right: 60px;">
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block; list-style: none; text-decoration: none;">Home</li>
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;">Schools</li>
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;">Search</li>
+      <li style="margin: 0; padding-top: 10px; text-align: center; width: 80px;height: 30px; background-color: orange; color: white; font-size: 14px; display: inline-block;list-style: none;  text-decoration: none;">About</li>
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+    
+  
+
+</body>
+
+
+
+
+</html>

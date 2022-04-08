@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+
+<html>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Lincoln</title>
+
+    <style>
+
+
+
+*{
+    margin: 0;
+}
+
+a{
+   text-decoration: none; 
+   color:white;
+   font-family: Arial;
+ 
+}
+
+
+
+      body{
+
+        background-color: #000000;
+
+      }
+
+
+      nav{
+
+    
+        background-color: #222222;
+        height: 60px;
+        width: 100%;
+
+      }
+
+    </style>
+</head>
+
+
+
+
+
+<body >
+
+
+
+
+    
+    <img style="background-image: url(/two.jpeg); width: 100%; height: 100%; z-index: -1; position: absolute; opacity: 0.2;">
+
+    {% load static %}
+
+    
+
+
+       
+        <h1 style="color: white; font-family: Arial, Helvetica, sans-serif; margin-left: 20px; margin-top: 20px;">Edit Student Details</h1>
+        <br>
+        <br>
+        <p style="margin-left: 25px;   color: whitesmoke;font-family: Arial, Helvetica, sans-serif;"><%= studentdet.firstname %>  <%= studentdet.middlename %> <%= studentdet.lastname %></p>
+        
+        <form method= "post" action="/update/<%= studentdet.matricnumber %>" style="margin-top: 60px; margin-left: 20px; width: 1000px; margin-bottom: 100px;" >
+            <p style="display: inline;">
+                <label for="sch"></label>
+                <input type="text" name="firstname" id="sch" value="<%= studentdet.firstname %>" placeholder="First Name" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+                <input type="text" name="middlename" id="sch" value="<%= studentdet.middlename %>" placeholder="Middle Name" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+                <input type="text" name="lastname" id="sch" value="<%= studentdet.lastname %>" placeholder="Last Name" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+               
+                <input type="text" name="nickname" id="sch" value="<%= studentdet.matricnumber %>" placeholder="Nickname" style=" padding-left: 10px; display: inline; height: 50px; width: 700px;" /><br>
+                <input type="text" name="gpa" id="sch" value="<%= studentdet.gpa %>" placeholder="Current GPA" style="padding-left: 10px; display: inline;  height: 100px; width: 700px;" /><br>
+                
+
+                <input type="text" name="email" id="sch" value="<%= studentdet.email %>" placeholder="Email" style=" padding-left: 10px; display: inline; height: 50px; width: 700px;" /><br>
+                <input type="text" name="gender" id="sch" value="<%= studentdet.gender %>" placeholder="Gender" style="padding-left: 10px; display: inline;  height: 100px; width: 700px;" /><br>
+                <input type="text" name="stateoforigin" id="sch" value="<%= studentdet.stateoforigin %>" placeholder="State Of Origin" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+                <input type="text" name="matricnumber" id="sch" value="<%= studentdet.matricnumber %>" placeholder="Matric Number" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+                <input type="text" name="department" id="sch" value="<%= studentdet.department %>" placeholder="Department" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+               
+
+                <input type="text" name="faculty" id="sch" value="<%= studentdet.faculty %>" placeholder="Faculty" style=" padding-left: 10px; display: inline; height: 50px; width: 700px;" /><br>
+                <input type="text" name="yearofintake" id="sch" value="<%= studentdet.yearofintake %>" placeholder="Year of Intake" style="padding-left: 10px; display: inline;  height: 100px; width: 700px;" /><br>
+                <input type="text" name="monthofintake" id="sch" value="<%= studentdet.monthofintake %>" placeholder="Month of Intake" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+                <input type="text" name="entryage" id="sch" value="<%= studentdet.entryage %>" placeholder="Entry Age" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+                <input type="text" name="country" id="sch" value="<%= studentdet.country %>" placeholder="Country" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+                <input type="text" name="expectedyearofentry" id="sch" value="<%= studentdet.expectedyearofentry %>" placeholder="Expected Year of Graduation" style="padding-left: 10px; display: inline; height: 100px; width: 700px;" /><br>
+               
+
+
+
+                <br>
+                <input type = "submit" value = "PUSH UPDATE" style="height: 45px;width: 200px;color: #e7e7e7; font-family: Arial, Helvetica, sans-serif; background-color:  #FF0066; font-size: 15px; text-decoration: none; cursor: pointer; border: none; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
+            </p>
+        </form>
+
+
+    
+ 
+        
+
+
+
+    </div>
+    
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

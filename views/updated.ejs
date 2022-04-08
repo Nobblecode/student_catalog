@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+</head>
+<body>
+    
+
+
+
+    <h1>id: <%= studentdet.matricnumber %></h1>
+
+
+
+    <form action="/update/<%= studentdet.matricnumber %>" method="post">
+       
+        <input type="text" name="matricnumber" placeholder="matricnumber" value="<%= studentdet.matricnumber %>"> 
+        <input type="text" name="firstname" placeholder="firstname" value="<%= studentdet.firstname %>">
+        <input type="text" name="middlename" placeholder="middlename" value="<%= studentdet.middlename %>">
+        <input type="text" name="lastname" placeholder="lastname" value="<%= studentdet.lastname %>">
+        <input type="text" name="nickname" placeholder="nickname" value="<%= studentdet.nickname %>">
+        <input type="text" name="email" placeholder="email" value="<%= studentdet.email %>">
+        <input type="text" name="gender" placeholder="gender" value="<%= studentdet.gender %>">
+        <input type="text" name="stateoforigin" placeholder="stateoforigin" value="<%= studentdet.stateoforigin %>">
+        <input type="text" name="department" placeholder="department" value="<%= studentdet.department %>">
+        <input type="text" name="faculty" placeholder="faculty" value="<%= studentdet.faculty %>">
+        <input type="text" name="yearofintake" placeholder="yearofintake" value="<%= studentdet.yearofintake %>">
+        <input type="text" name="monthofintake" placeholder="monthofintake" value="<%= studentdet.monthofintake %>">
+        <input type="text" name="entryage" placeholder="entryage" value="<%= studentdet.entryage %>">
+        <input type="text" name="expectedyearofentry" placeholder="expectedyearofentry" value="<%= studentdet.expectedyearofentry %>">
+        <input type="text" name="country" placeholder="country" value="<%= studentdet.country %>">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+
+
+</body>
+</html>
